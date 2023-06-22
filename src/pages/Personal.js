@@ -2,7 +2,6 @@ import { Grid, TextField } from "@mui/material";
 import React from "react";
 
 const Personal = ({ formik }) => {
-  console.log("formik",formik);
   return (
     <div>
       <Grid container spacing={3}>

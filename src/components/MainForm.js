@@ -92,11 +92,6 @@ const MainForm = () => {
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
   };
 
-  const handleReset = () => {
-    // setActiveStep(0);
-    window.location.reload(false);
-  };
-
   return (
     <Box sx={{ width: "100%" }}>
       <Stepper activeStep={activeStep}>
@@ -119,9 +114,6 @@ const MainForm = () => {
           </Box>
           <Box sx={{ display: "flex", flexDirection: "row", m: 2 }}>
             <Box sx={{ flex: "1 1 auto" }} />
-            <Button variant="outlined" onClick={handleReset}>
-              Reset Resume
-            </Button>
           </Box>
         </>
       ) : (

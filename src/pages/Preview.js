@@ -17,10 +17,18 @@ const Preview = () => {
   const exp = useSelector(setExperienceSelector);
   const skills = useSelector(setSkillsSelector);
 
+  const handleReset = () => {
+    // setActiveStep(0);
+    window.location.reload(false);
+  }; 
+
   return (
     <Box>
       <Box display="flex" justifyContent="flex-end" m={2}>
-        <Button variant="contained" onClick={handlePrint}>
+          <Button variant="outlined" onClick={handleReset} className="reset-button">
+              Reset
+            </Button>
+        <Button variant="contained" onClick={handlePrint} ml={5}>
           Download
         </Button>
       </Box>
