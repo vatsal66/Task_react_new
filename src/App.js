@@ -12,6 +12,12 @@ const App = () =>{
   const darkTheme = createTheme({
     palette: {
       mode: darkMode ? "dark" : "light",
+      primary: {
+        light: '##25c365',
+        main: '#25c365',
+        dark: '#34e97e',
+        contrastText: '#fff',
+      }
     },
   });
   return (

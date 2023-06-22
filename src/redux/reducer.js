@@ -38,6 +38,7 @@ export const imgState = (value) => ({
 export const formReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case FormActionTypes.SET_PERSONAL_INFO:
+      console.log("redux data", action.payload);
       return { ...state, personalInfo: action.payload.value };
     case FormActionTypes.SET_EDUCATION:
       return { ...state, education: action.payload.value };
