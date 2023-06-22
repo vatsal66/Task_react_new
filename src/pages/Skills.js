@@ -27,6 +27,7 @@ const Skills = ({ img, setImg, skills, setSkills }) => {
             </Box>
           </Box>
         </Grid>
+        
         <Grid item lg={12} md={12} sm={12} xs={12}>
           <Box display="flex" justifyContent="center">
             <Box display="none">
